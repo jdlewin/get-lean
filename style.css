@@ -71,7 +71,7 @@ footer{border-top:1px dashed var(--faint);text-align:center;color:var(--soft);
 footer::before{content:"+ - - - - - - - - +";display:block;color:var(--faint);
   letter-spacing:.3em;margin-bottom:1rem;}
 .crumb{font-size:.82rem;color:var(--soft);margin:0 0 .5rem;}
-.crumb a{color:var(--soft);}
+.crumb a{color:var(--green-ink);}
 @media (max-width:560px){body{font-size:15px} h1{font-size:1.15rem}}
 @media print{.top{display:none} body{background:#fff} main{max-width:none}
   h1::before,h1::after,h2::before,h2::after{content:"";}}

@@ -45,7 +45,7 @@ li::marker{color:var(--faint);}
 li.check{list-style:none;margin:.45em 0;}
 li.check::marker{content:"";}
 li.check label{display:flex;gap:.7em;align-items:baseline;cursor:pointer;
-  padding:.55em .7em;border:1px dashed var(--green);border-radius:12px;}
+  padding:.15em 0;}
 li.check input[type=checkbox]{position:absolute;opacity:0;pointer-events:none;}
 li.check label span::before{content:"[ ] ";color:var(--green-ink);font-weight:700;}
 li.check input[type=checkbox]:checked + span::before{content:"[x] ";}

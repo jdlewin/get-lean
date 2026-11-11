@@ -33,9 +33,14 @@ TEMPLATE = """<!DOCTYPE html>
 
 A_BODY = """
 <h1>Layout A — Timeline</h1>
-<p>One cook, one clock. Start at T+0 and work down; the oven runs the schedule and everything else fills the gaps. Quantities are the full batch as written.</p>
+<p>One cook, one clock. Stage 0 happens before the clock — about 20 min, no heat, just knife work and jars. Then T+0: the oven goes on and everything else fills the gaps. Quantities are the full batch as written.</p>
 <table>
 <tr><th>When</th><th>Do</th><th>Detail</th></tr>
+<tr><td>Stage 0</td><td>Wash + dry.</td><td>All greens, cucumbers, tomatoes, zucchini, celery. Box the greens with a paper towel. Keep the raw-meat board separate from here on.</td></tr>
+<tr><td>Stage 0</td><td>Cut the veg.</td><td>Cauliflower into florets. Cabbage sliced, about 6 cups, boxed dry. Cucumbers diced. Cherry tomatoes halved. Zucchini in half-moons. Celery sliced.</td></tr>
+<tr><td>Stage 0</td><td>Aromatics.</td><td>Garlic minced, ginger grated — little piles per recipe (chicken, meatballs, dressings, later-week beef).</td></tr>
+<tr><td>Stage 0</td><td>Spices measured.</td><td>Oregano + Italian seasoning for the chicken and meatballs today; shawarma spices (cumin, paprika, coriander, turmeric) into small containers for later in the week.</td></tr>
+<tr><td>Stage 0</td><td>Containers + labels.</td><td>Monday/Tuesday boxes out. Freezer portions labeled with recipe name and date. Three small jars out for dressings.</td></tr>
 <tr><td>T+0:00</td><td>Oven to 425°F. Cauliflower in.</td><td>1 head in florets, half the oil, salt, pepper. Roast 25–35 min, turn once. (Curry or steak dinner — keep portions separate once cooked.)</td></tr>
 <tr><td>T+0:05</td><td>Salad chicken on.</td><td>1.5 lb chicken, 2 tsp oregano, half the garlic, salt, pepper. Skillet over medium-high to 165°F. Rest 5 min, slice. This covers Mon + Tue lunches.</td></tr>
 <tr><td>T+0:15</td><td>Meatballs mixed and in.</td><td>1.5 lb turkey, 1 egg, 30 g parm, half the garlic, 2 tsp Italian seasoning, salt, pepper. Roll ~12, parchment tray, same 425°F oven, 15–20 min to 165°F.</td></tr>

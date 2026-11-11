@@ -170,6 +170,44 @@ function setServings(n){
 </script>
 """
 
+E_BODY = """
+<h1>The Sunday cook — one page</h1>
+<p>Stage 0 first (no heat, ~20 min), then the clock starts when the oven goes on. Every step ticks off; the tag says where you stand. Two cooks split oven/stove/board, one cook runs top to bottom.</p>
+<h2>Stage 0 — before heat</h2>
+<ul>
+<li class="check"><label><input type="checkbox"> <span>[Board] Wash + dry everything; box greens with a paper towel, meat board separate</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Board] Cut: cauliflower florets, cabbage ~6 cups boxed dry, cukes diced, cherry tomatoes halved, zucchini half-moons, celery sliced</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Board] Aromatics: garlic minced, ginger grated, piled per recipe</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Board] Spices measured: oregano + Italian for today, shawarma spices jarred for later</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Board] Containers out, freezer portions labeled, three dressing jars out</span></label></li>
+</ul>
+<h2>T+0:00 — oven on</h2>
+<ul>
+<li class="check"><label><input type="checkbox"> <span>[Oven] 425°F. Cauliflower in (florets, half the oil, salt, pepper) — 25–35 min</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Stove] Salad chicken on: 1.5 lb, oregano + garlic + salt + pepper, to 165°F, rest 5, slice (Mon + Tue lunches)</span></label></li>
+</ul>
+<h2>T+0:15 — second wave</h2>
+<ul>
+<li class="check"><label><input type="checkbox"> <span>[Oven] 12 meatballs in beside the cauliflower (turkey, egg, parm, garlic, Italian) — 15–20 min to 165°F</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Stove] Tomato sauce on: garlic + oregano 30 sec, 28 oz tomatoes, simmer 15</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Board] Three dressings jarred: Greek lemon, ginger-lime peanut (thinned), shawarma yogurt</span></label></li>
+</ul>
+<h2>T+0:35 — out</h2>
+<ul>
+<li class="check"><label><input type="checkbox"> <span>[Oven] Cauliflower out to shallow containers, portions separate</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Oven → Stove] Meatballs out, into the sauce for 5 min</span></label></li>
+</ul>
+<h2>T+0:45 — pack</h2>
+<ul>
+<li class="check"><label><input type="checkbox"> <span>[Stove] Zucchini browned; meatballs + sauce + zucchini split in two (dinner for two)</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Board] Chicken-salad boxes packed Mon/Tue, dressing separate; fridge 3–4 days, rest frozen + labeled</span></label></li>
+</ul>
+<h2>Not today</h2>
+<ul>
+<li class="check"><label><input type="checkbox"> <span>Shrimp + salmon stay frozen, thaw overnight; shrimp cooks fresh 1–2 min per side</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>Potatoes + asparagus roast fresh; peppers, steak, shawarma, burger bowls on their days</span></label></li>
+</ul>
+"""
 INDEX_BODY = """
 <h1>Week 2 prep lab</h1>
 <p>Three layouts of the same Sunday cook (~90 min), plus a scaler. Same food, same quantities — only the organization changes. Compare and pick one.</p>
@@ -177,6 +215,7 @@ INDEX_BODY = """
 <li><a href="/lab/a/">A — Timeline</a>: one clock top to bottom, oven runs the schedule.</li>
 <li><a href="/lab/b/">B — Stations</a>: oven / stove / board, three piles of work.</li>
 <li><a href="/lab/c/">C — Checklist</a>: tappable boxes, phone in one hand, tongs in the other.</li>
+<li><a href="/lab/cook/">Cook — the one page</a>: timeline + stations + checklist merged, time-ordered, tickable.</li>
 <li><a href="/lab/scale/">Scale — servings calculator</a>: multiply the week to feed Megan and Ellis.</li>
 </ul>
 <p>Source: the frozen Week 2 doc (raw/transfers/2026-11-10-nov-wk2). Branch: week2-prep-lab. Main site untouched.</p>
@@ -185,7 +224,8 @@ INDEX_BODY = """
 PAGES = {"a": ("Layout A — Timeline", A_BODY),
          "b": ("Layout B — Stations", B_BODY),
          "c": ("Layout C — Checklist", C_BODY),
-         "scale": ("Scale — servings calculator", D_BODY)}
+         "scale": ("Scale — servings calculator", D_BODY),
+         "cook": ("The Sunday cook — one page", E_BODY)}
 
 def page(title, body):
     return TEMPLATE.replace("{{TITLE}}", title).replace("{{BODY}}", body)

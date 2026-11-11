@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scale — servings calculator — Get Lean lab</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+<a class="brand" href="/">get lean</a>
+<nav><a href="/">The Plan</a><a class="on" href="/cookbook/">The Kitchen</a><a href="/gym/">The Gym</a></nav>
+</header>
+<main>
+<p class="crumb"><a href="/lab/">lab</a> / week 2 sunday cook (~90 min) — experiment, not the live cookbook</p>
+
+<h1>Scale — servings calculator</h1>
+<p>Scales the pots, not your plate. JD's portions and day totals don't change — this just buys and cooks more of the same food. Base is the week as written (2 servings).</p>
+<p>
+<button onclick="setServings(2)">2 · as written</button>
+<button onclick="setServings(3)">3 · + Ellis at dinner</button>
+<button onclick="setServings(4)">4 · double lunches</button>
+<button onclick="setServings(6)">6 · full house all week</button>
+</p>
+<p id="serv-note">Showing quantities for 2 servings (x1).</p>
+<table id="scale-table">
+<tr><th>Item</th><th>Scaled qty</th></tr>
+<tr data-qty="4.5" data-kind="lb"><td>Ground beef, 93%</td><td class="scaled">4.5 lb</td></tr>
+<tr data-qty="1.5" data-kind="lb"><td>Sirloin</td><td class="scaled">1.5 lb</td></tr>
+<tr data-qty="3" data-kind="lb"><td>Chicken breast</td><td class="scaled">3 lb</td></tr>
+<tr data-qty="1.5" data-kind="lb"><td>Ground turkey</td><td class="scaled">1.5 lb</td></tr>
+<tr data-qty="1" data-kind="lb"><td>Salmon</td><td class="scaled">1 lb</td></tr>
+<tr data-qty="4" data-kind="lb"><td>Shrimp, peeled</td><td class="scaled">4 lb</td></tr>
+<tr data-qty="15" data-kind="tuna"><td>Tuna, drained</td><td class="scaled">15 oz drained (3 cans)</td></tr>
+<tr data-qty="12" data-kind="eggs"><td>Eggs</td><td class="scaled">12 eggs</td></tr>
+<tr data-qty="96" data-kind="yogurt"><td>Greek yogurt, plain nonfat</td><td class="scaled">96 oz (3 tubs)</td></tr>
+<tr data-qty="40" data-kind="g"><td>Feta</td><td class="scaled">40 g</td></tr>
+<tr data-qty="30" data-kind="g"><td>Parmesan</td><td class="scaled">30 g</td></tr>
+<tr data-qty="100" data-kind="g"><td>Mozzarella, part-skim</td><td class="scaled">100 g</td></tr>
+<tr data-qty="40" data-kind="g"><td>Cheddar, shredded</td><td class="scaled">40 g</td></tr>
+<tr data-qty="4" data-kind="tbsp"><td>Hummus</td><td class="scaled">4 tbsp</td></tr>
+</table>
+<p>Produce, sauces, and spices scale by the same factor — shop the grocery list by eye. Seasonings to taste; oils measured per pan, not per head.</p>
+<script>
+function setServings(n){
+  var f = n/2;
+  document.querySelectorAll('#scale-table tr[data-qty]').forEach(function(tr){
+    var q = parseFloat(tr.dataset.qty), kind = tr.dataset.kind, v = q*f, out;
+    if(kind==='lb'){ out = (Math.round(v*4)/4) + ' lb'; }
+    else if(kind==='g'){ out = (Math.round(v/5)*5) + ' g'; }
+    else if(kind==='tbsp'){ out = Math.round(v) + ' tbsp'; }
+    else if(kind==='eggs'){ out = Math.ceil(v) + ' eggs'; }
+    else if(kind==='yogurt'){ out = Math.round(v) + ' oz (' + Math.ceil(v/32) + ' tubs)'; }
+    else if(kind==='tuna'){ out = Math.round(v) + ' oz drained (' + Math.ceil(v/5) + ' cans)'; }
+    tr.querySelector('.scaled').textContent = out;
+  });
+  document.getElementById('serv-note').textContent = 'Showing quantities for ' + n + ' servings (x' + f + ').';
+}
+</script>
+
+</main>
+<footer><p>Get Lean · JD + G-Force · lab branch week2-prep-lab · <a href="/lab/">all three layouts</a></p></footer>
+</body>
+</html>

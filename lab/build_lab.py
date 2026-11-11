@@ -175,37 +175,37 @@ E_BODY = """
 <p>Stage 0 first (no heat, ~20 min), then the clock starts when the oven goes on. Every step ticks off; the tag says where you stand. Two cooks split oven/stove/board, one cook runs top to bottom.</p>
 <h2>Stage 0 — before heat</h2>
 <ul>
-<li class="check"><label><input type="checkbox"> <span>[Board] Wash + dry everything; box greens with a paper towel, meat board separate</span></label></li>
-<li class="check"><label><input type="checkbox"> <span>[Board] Cut: cauliflower florets, cabbage ~6 cups boxed dry, cukes diced, cherry tomatoes halved, zucchini half-moons, celery sliced</span></label></li>
-<li class="check"><label><input type="checkbox"> <span>[Board] Aromatics: garlic minced, ginger grated, piled per recipe</span></label></li>
-<li class="check"><label><input type="checkbox"> <span>[Board] Spices measured: oregano + Italian for today, shawarma spices jarred for later</span></label></li>
-<li class="check"><label><input type="checkbox"> <span>[Board] Containers out, freezer portions labeled, three dressing jars out</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Board] Wash + dry everything. Greens (6 cups romaine, 2 cups spinach), 3 cucumbers, a pint of cherry tomatoes, 2 large tomatoes, 2 zucchini, 2 celery stalks. Box the greens with a paper towel so they stay crisp till Tuesday. The raw-meat board stays separate from here on.</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Board] Cut the veg. Cauliflower into florets. Cabbage sliced, about 6 cups, boxed dry — it feeds Wednesday's slaw and Friday's Korean beef, and dry is what keeps it crunchy. Cucumbers diced, cherry tomatoes halved, zucchini in half-moons, celery sliced for Sunday's tuna.</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Board] Aromatics. Garlic minced, ginger grated, in little piles per recipe — chicken, meatballs, and dressings today; the Korean beef and shrimp keep theirs later in the week. Doing it now means no sticky fingers mid-sear.</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Board] Spices measured. Today's: 2 tsp oregano for the chicken, 2 tsp Italian seasoning for the meatballs. Plus Saturday's shawarma kit jarred now while the jars are out — 2 tsp cumin, 2 tsp paprika, 1 tsp coriander, half tsp turmeric.</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Board] Containers + labels. Monday and Tuesday boxes out, freezer portions labeled with recipe name and date, three small jars out for the dressings. Label now; future-you won't remember what's what.</span></label></li>
 </ul>
 <h2>T+0:00 — oven on</h2>
 <ul>
-<li class="check"><label><input type="checkbox"> <span>[Oven] 425°F. Cauliflower in (florets, half the oil, salt, pepper) — 25–35 min</span></label></li>
-<li class="check"><label><input type="checkbox"> <span>[Stove] Salad chicken on: 1.5 lb, oregano + garlic + salt + pepper, to 165°F, rest 5, slice (Mon + Tue lunches)</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Oven] 425°F. Cauliflower in — 1 head in florets, half the oil, salt, pepper. Roast 25–35 min, turn once, until browned at the edges. This covers the curry and the steak dinners; keep the two portions separate once cooked.</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Stove] Salad chicken on — 1.5 lb, today's oregano, half the garlic, salt, pepper. Skillet over medium-high to 165°F at the thickest part. Rest 5 minutes, then slice. This is Monday and Tuesday lunch handled in one pan.</span></label></li>
 </ul>
 <h2>T+0:15 — second wave</h2>
 <ul>
-<li class="check"><label><input type="checkbox"> <span>[Oven] 12 meatballs in beside the cauliflower (turkey, egg, parm, garlic, Italian) — 15–20 min to 165°F</span></label></li>
-<li class="check"><label><input type="checkbox"> <span>[Stove] Tomato sauce on: garlic + oregano 30 sec, 28 oz tomatoes, simmer 15</span></label></li>
-<li class="check"><label><input type="checkbox"> <span>[Board] Three dressings jarred: Greek lemon, ginger-lime peanut (thinned), shawarma yogurt</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Oven] 12 meatballs in beside the cauliflower — 1.5 lb turkey, 1 egg, 30 g parm, the rest of today's garlic, Italian seasoning, salt, pepper. Mix loose, don't pack them dense. Parchment tray, same 425°F oven, 15–20 min to 165°F.</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Stove] Tomato sauce on — 1 tbsp oil, remaining garlic plus 1 tsp oregano for 30 seconds until fragrant, then the 28 oz crushed tomatoes, salt, pepper. Simmer 15 minutes; it should lazily bubble, not boil.</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Board] Three dressings jarred. Greek lemon: 2 tbsp oil, juice of 1 lemon, 1 tsp Dijon, garlic, pepper. Ginger-lime peanut: 2 tbsp measured PB, 2 tbsp soy, juice of 2 limes, 1 tbsp vinegar, 2 tsp sesame oil, garlic, ginger — thin with water a teaspoon at a time till pourable. Shawarma yogurt: 1 cup yogurt, half a lemon, salt, pepper. Sealed jars, straight to the fridge.</span></label></li>
 </ul>
 <h2>T+0:35 — out</h2>
 <ul>
-<li class="check"><label><input type="checkbox"> <span>[Oven] Cauliflower out to shallow containers, portions separate</span></label></li>
-<li class="check"><label><input type="checkbox"> <span>[Oven → Stove] Meatballs out, into the sauce for 5 min</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Oven] Cauliflower out into shallow containers so it cools fast — fridge, not counter, within two hours. Portions kept separate for their dinners.</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Oven → Stove] Meatballs out and straight into the sauce for 5 minutes. They finish cooking in the sauce and drink it in — that's the whole trick.</span></label></li>
 </ul>
 <h2>T+0:45 — pack</h2>
 <ul>
-<li class="check"><label><input type="checkbox"> <span>[Stove] Zucchini browned; meatballs + sauce + zucchini split in two (dinner for two)</span></label></li>
-<li class="check"><label><input type="checkbox"> <span>[Board] Chicken-salad boxes packed Mon/Tue, dressing separate; fridge 3–4 days, rest frozen + labeled</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Stove] Zucchini browned in the skillet while the meatballs rest. Meatballs + sauce + zucchini split evenly in two — that's dinner for two tonight, JD and Megan.</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>[Board] Chicken-salad boxes packed for Mon/Tue — greens, sliced chicken, the 40 g feta divided evenly, dressing always separate or Monday's lunch is Monday's mush. Fridge what you eat in 3–4 days, freeze the rest with its label.</span></label></li>
 </ul>
 <h2>Not today</h2>
 <ul>
-<li class="check"><label><input type="checkbox"> <span>Shrimp + salmon stay frozen, thaw overnight; shrimp cooks fresh 1–2 min per side</span></label></li>
-<li class="check"><label><input type="checkbox"> <span>Potatoes + asparagus roast fresh; peppers, steak, shawarma, burger bowls on their days</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>Shrimp + salmon stay frozen; each day's portion thaws overnight in the fridge. Shrimp cooks fresh, 1–2 minutes per side — never more than 3–4 days cooked in the fridge.</span></label></li>
+<li class="check"><label><input type="checkbox"> <span>Potatoes and asparagus roast fresh later (they go soggy in storage). Peppers Wednesday, garlic-lemon shrimp Thursday, steak Friday, shawarma Saturday, tuna and burger bowls Sunday — seasonings already jarred, just cook.</span></label></li>
 </ul>
 """
 INDEX_BODY = """
